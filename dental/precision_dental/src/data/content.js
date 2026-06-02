@@ -31,12 +31,12 @@ export const seo = {
 };
 
 export const navLinks = [
-  { label: 'Inicio', path: '/', hash: '#inicio', section: 'inicio' },
-  { label: 'Servicios', path: '/', hash: '#servicios', section: 'servicios', route: '/servicios' },
-  { label: 'Galería', path: '/', hash: '#galeria', section: 'galeria' },
-  { label: 'Nosotros', path: '/', hash: '#nosotros', section: 'nosotros', route: '/nosotros' },
-  { label: 'Testimonios', path: '/', hash: '#testimonios', section: 'testimonios' },
-  { label: 'Contacto', path: '/', hash: '#contacto', section: 'contacto' },
+  { label: 'Inicio', path: '/' },
+  { label: 'Servicios', path: '/servicios' },
+  { label: 'Galería', path: '/galeria' },
+  { label: 'Nosotros', path: '/nosotros' },
+  { label: 'Testimonios', path: '/testimonios' },
+  { label: 'Contacto', path: '/contacto' },
 ];
 
 export const stats = [
