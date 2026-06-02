@@ -1,0 +1,81 @@
+.heroBackdrop {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(239, 209, 159, 0.44), transparent 32rem),
+    radial-gradient(circle at 12% 80%, rgba(197, 185, 172, 0.35), transparent 28rem),
+    linear-gradient(155deg, #FAF6EE 0%, #F3EDE0 40%, #EEE5D3 100%);
+}
+
+.heroBackdrop::before,
+.heroBackdrop::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.heroBackdrop::before {
+  width: 19rem;
+  height: 19rem;
+  left: -6rem;
+  top: 18%;
+  background: radial-gradient(circle, rgba(239, 209, 159, 0.46), transparent 68%);
+}
+
+.heroBackdrop::after {
+  width: 24rem;
+  height: 24rem;
+  right: -6rem;
+  bottom: 4%;
+  background: radial-gradient(circle, rgba(197, 169, 122, 0.34), transparent 70%);
+}
+
+.divider {
+  position: absolute;
+  top: 16%;
+  bottom: 14%;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(197, 169, 122, 0.72), transparent);
+}
+
+.scrollLine {
+  display: inline-block;
+  width: 1px;
+  height: 2.75rem;
+  overflow: hidden;
+  background: rgba(74, 55, 40, 0.18);
+}
+
+.scrollLine::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 42%;
+  background: #4A3728;
+  animation: scrollPulse 1.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@keyframes scrollPulse {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(260%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .divider {
+    display: none;
+  }
+}
