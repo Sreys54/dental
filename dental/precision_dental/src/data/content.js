@@ -33,6 +33,7 @@ export const seo = {
 export const navLinks = [
   { label: 'Inicio', path: '/', hash: '#inicio', section: 'inicio' },
   { label: 'Servicios', path: '/', hash: '#servicios', section: 'servicios', route: '/servicios' },
+  { label: 'Galería', path: '/', hash: '#galeria', section: 'galeria' },
   { label: 'Nosotros', path: '/', hash: '#nosotros', section: 'nosotros', route: '/nosotros' },
   { label: 'Testimonios', path: '/', hash: '#testimonios', section: 'testimonios' },
   { label: 'Contacto', path: '/', hash: '#contacto', section: 'contacto' },
@@ -102,6 +103,36 @@ export const services = [
       'Soluciones integrales para recuperar función, comodidad y estética mediante coronas, prótesis, restauraciones y planeación completa.',
   },
 ];
+
+export const beforeAfterCategories = [
+  { id: 'sonrisa', label: 'Diseño de Sonrisa' },
+  { id: 'blanqueamiento', label: 'Blanqueamiento' },
+  { id: 'ortodoncia', label: 'Ortodoncia' },
+  { id: 'implantes', label: 'Implantes' },
+];
+
+export const beforeAfterCases = {
+  sonrisa: [
+    { id: 1, label: 'Caso 01', note: null, before: null, after: null },
+    { id: 2, label: 'Caso 02', note: null, before: null, after: null },
+    { id: 3, label: 'Caso 03', note: null, before: null, after: null },
+  ],
+  blanqueamiento: [
+    { id: 1, label: 'Caso 01', note: null, before: null, after: null },
+    { id: 2, label: 'Caso 02', note: null, before: null, after: null },
+    { id: 3, label: 'Caso 03', note: null, before: null, after: null },
+  ],
+  ortodoncia: [
+    { id: 1, label: 'Caso 01', note: null, before: null, after: null },
+    { id: 2, label: 'Caso 02', note: null, before: null, after: null },
+    { id: 3, label: 'Caso 03', note: null, before: null, after: null },
+  ],
+  implantes: [
+    { id: 1, label: 'Caso 01', note: null, before: null, after: null },
+    { id: 2, label: 'Caso 02', note: null, before: null, after: null },
+    { id: 3, label: 'Caso 03', note: null, before: null, after: null },
+  ],
+};
 
 export const values = ['Honestidad', 'Calidez', 'Precisión', 'Innovación'];
 
